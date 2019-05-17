@@ -51,12 +51,12 @@ install_java() {
 }
 
 install_kibana() {
-    # default - ES 2.3.1
+    # default - ES 7.0.0
 	kibana_url="https://download.elastic.co/kibana/kibana/kibana-4.5.0-linux-x64.tar.gz"
 	
-	if [[ "${ES_VERSION}" == "2.2.2" ]]; 
+	if [[ "${ES_VERSION}" == "7.0.0" ]]; 
     then
-		kibana_url="https://download.elastic.co/kibana/kibana/kibana-4.4.2-linux-x64.tar.gz"
+		kibana_url="https://download.elastic.co/kibana/kibana/kibana-7.0.0-linux-x64.tar.gz"
 	fi
     
     if [[ "${ES_VERSION}" == "2.1.2" ]]; 
